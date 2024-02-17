@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.movie-card {
+  position: relative;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0; 
+  padding: 0; 
+}
+
+.header {
+  position: relative;
+  padding: 20px;
+}
+
+.title {
+  position: absolute;
+  left: 25%;
+  top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  border: solid 5px red;
+  padding-left: 20% ;
+  padding-right: 20%;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 20px;
+  height: 100%;
+  background-color: #ff5722;
+}
+.title::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 100%;
+  background-color: #ff5722;
+}
+
+
+.overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .overview {
+  opacity: 1;
+}
+
+
+.show-overlay .overview {
+  opacity: 1;
+}
+
+body {
+  background-color: black;
+  color: white; 
+}
+
+.movie-card {
+  background-color: #333; 
+  color: white; 
+  border-radius: 10px; 
+  padding: 20px; 
+  margin-bottom: 20px;
+}
