@@ -1,1 +1,1 @@
-The page is hosted at " https://github.com/awwmar/postman "
+The page is hosted at " https://awwmar.github.io/postman "
